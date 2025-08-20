@@ -1,0 +1,7 @@
+click
+pytest
+pytest-cov
+pylint
+pytest-mock
+requests
+black
