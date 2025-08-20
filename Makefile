@@ -1,6 +1,6 @@
 install:
 	pip install --upgrade pip && \
-		pip install -r requirements.txt && 
+		pip install -r requirements.txt 
 
 install-gpc:
 	pip install --upgrade pip && \
@@ -24,6 +24,5 @@ format:
 	black *.py
 
 test:
-	pytest --cov=hello --cov-report=term-missing --cov-report=html \
+	pytest -m pytest -vv --cov=hello test_hello.py --cov-report=term-missing --cov-report=html \
 		--cov-report=xml --cov-config=.coveragerc
-		
