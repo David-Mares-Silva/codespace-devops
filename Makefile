@@ -18,7 +18,7 @@ install-azure:
 		pip install git+
 
 lint:
-	pylint --disable=R,C, hello.py --rcfile=pyproject.toml .
+	pylint --disable=R,C, hello.py 
 
 format:
 	black *.py
