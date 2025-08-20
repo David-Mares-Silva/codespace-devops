@@ -24,5 +24,4 @@ format:
 	black *.py
 
 test:
-	pytest -m pytest -vv --cov=hello test_hello.py --cov-report=term-missing --cov-report=html \
-		--cov-report=xml --cov-config=.coveragerc
+	pytest -m pytest -vv --cov=hello test_hello.py 
